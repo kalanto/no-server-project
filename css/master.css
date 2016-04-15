@@ -1,0 +1,30 @@
+body{
+   margin: 0 auto;
+}
+.navDir{
+   height: 20%;
+   padding: 3%;
+   background: rgb(0,0,0);
+   text-align: center;
+   margin: 0 auto;
+}
+.navButton{
+   padding: 2%;
+   display: inline-block;
+   margin: auto;
+   cursor: pointer;
+   background: rgb(58, 60, 58);
+   color: rgb(238, 7, 7);
+   border-radius: 49%;
+   text-align: center;
+}
+.home{
+   text-align: center;
+   background: rgb(116, 116, 117);
+   margin: -23px auto;
+}
+.footer{
+   padding: 2%;
+   background: rgb(0,0,0);
+   text-align: center;
+}
