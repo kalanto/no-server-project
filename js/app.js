@@ -13,5 +13,4 @@ angular.module('noprizeApp',['ui.router'])
          url: '/memorial',
          templateUrl: 'js/routes/memorial.html'
       });
-
 });
