@@ -1,15 +1,13 @@
 <div class="home">
    <h2>Leave a memory or comment below</h2>
-   <input placeholder="enter your name here...."></input>
+   <input placeholder="enter your name here...." ng-model="nameInput"></input>
       <br>
-         <input placeholder="enter a memory here....."></input>
+         <input placeholder="enter a memory here....." ng-model="commentInput"></input>
             <br>
-               <button type="button" name="button">Submit</button>
+               <button type="button" name="button" ng-click="getComment()">Submit</button>
          <br>
-   after I hook up the server connections on firebase
-   comments and memories would appear here<br>
-   comments and memories would appear here<br>
-   comments and memories would appear here<br>
-   comments and memories would appear here<br>
-   comments and memories would appear here<br>
+      <div ng-repeat="memory in memories">
+            {{memory}}<br>
+
+      </div>
 </div>

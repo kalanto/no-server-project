@@ -6,7 +6,5 @@ angular.module('noprizeApp').directive('navDir', function(){
          element.find("button").css("color","rgb(164, 10, 149)");
          element.find("button").css('font-size', '20px');
       }
-
    };
-
 });
