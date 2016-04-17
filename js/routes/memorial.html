@@ -1,13 +1,19 @@
 <div class="home">
    <h2>Leave a memory or comment below</h2>
-   <input placeholder="enter your name here...." ng-model="nameInput"></input>
+   <div class="memLeft">
+      Name:
       <br>
-         <input placeholder="enter a memory here....." ng-model="commentInput"></input>
-            <br>
-               <button type="button" name="button" ng-click="getComment()">Submit</button>
-         <br>
-      <div ng-repeat="memory in memories">
-            {{memory}}<br>
+         <textarea placeholder="enter your name here...." ng-model="nameInput"></textarea>
+      <br>
+         Comment or Memory:
+      <br>
+         <textarea rows=5 placeholder="enter a memory here....." ng-model="commentInput"></textarea>
+      <br>
+         <button type="button" name="button" ng-click="getComment()">Submit</button>
+      <br>
+   </div>
 
+      <div class="memRight" ng-repeat="memory in memories">
+            {{memory}}<br>
       </div>
 </div>
