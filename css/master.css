@@ -39,16 +39,17 @@ body{
    text-shadow: 2px 2px rgb(246, 239, 243);
 }
 
-.memorial{
-   /*height: 100vh;*/
+.memorial h2{
    margin: 0 auto;
-   text-decoration: none;
+   padding: 2%;
+   font-size: 30px;
    color: rgb(255, 255, 255);
    text-shadow: 2px 2px rgb(102, 101, 102);
 }
-.memInput{
-   text-align: center;
-   margin: 0 auto;
+.memorial h3{
+   font-size: 20px;
+   color: rgb(255, 255, 255);
+   text-shadow: 2px 2px rgb(102, 101, 102);
 }
 .input{
    width: 70%;
@@ -58,6 +59,39 @@ body{
    border: 2px dotted purple;
    border-radius: 5px;
 }
+.memInput{
+   text-align: center;
+   margin: 0 auto;
+}
+.button{
+   padding: 1%;
+   background: rgb(202, 71, 223);
+   border-radius: 25px;
+   font-size: 12px;
+   font-family: candal;
+}
+.memPost{
+   background: white;
+   margin: 5%;
+   padding: 2%;
+   color: black;
+   text-shadow: none;
+}
+.date{
+   font-family: candal;
+   font-size: 14px;
+}
+.name{
+   font-family: candal;
+   font-size: 18px;
+   margin-left: 2%;
+}
+.post{
+   font-family: candal;
+   font-size: 16px;
+   margin-left: 2%;
+}
+
 .footer{
    padding: 2%;
    background: rgb(0,0,0);

@@ -3,31 +3,36 @@
    <div class="memInput">
       <h2>Sign the Virtual Guest Book Below</h2>
       <hr/>
-         Name:
+         <h3>Name:</h3>
       <br>
          <textarea class="input" placeholder="enter your name here...." ng-model="newMessage.username"></textarea>
       <br>
-         Comment or Memory:
+         <h3>Comment or Memory:</h3>
       <br>
          <textarea class="input" rows=15 placeholder="enter a comment or memory here....." ng-model="newMessage.text"></textarea>
       <br>
-         <button type="button" name="button" ng-click="addMessage(newMessage)">Submit</button>
+         <button type="button" class="button" ng-click="addMessage(newMessage)">Submit</button>
       <br>
       <hr/>
    </div>
 
 <!-- formatting and output for guest book -->
-            <ul>
-               <li ng-repeat="message in messages">
-                  {{message.username}},
+   <div class="memPost"
+         <ul>
+            <div ng-repeat="message in messages.reverse()" >
+               <div class="date">
+                     {{date | date:'MM-dd-yyyy'}}
+               </div>
                   <br>
+               <div class="name">
+                  {{message.username}},
+               </div>
+               <div class="post">
                   {{message.text}}
                   <br>
-                  {{today}}
-                  <br>
-                  {{date | date:'MM-dd-yyyy'}}
+               </div>
                   <hr/>
-               </li>
-            </ul>
+               </div>
+         </ul>
       </div>
 </div>
