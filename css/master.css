@@ -111,10 +111,13 @@ body{
    width: 100%;
    background-image: url('/img/navFlowers.jpg');
    display: flex;
-   justify-content: center;
+   justify-content: flex-start;
 }
 .footbutton{
-   padding: 1%;
+   padding: 15%;
    border-radius: 70%;
    cursor: pointer;
+   font-family: canal;
+   font-size: 16px;
+   background: red;
 }
