@@ -1,19 +1,28 @@
-<div class="home">
-   <h2>Leave a memory or comment below</h2>
-   <div class="memLeft">
-      Name:
+<div class="memorial">
+   <!-- input boxes for guest book  -->
+      Sign the virtual guest book below
       <br>
-         <textarea placeholder="enter your name here...." ng-model="nameInput"></textarea>
+         Name:
+      <br>
+         <textarea placeholder="enter your name here...." ng-model="newMessage.username"></textarea>
       <br>
          Comment or Memory:
       <br>
-         <textarea rows=5 placeholder="enter a memory here....." ng-model="commentInput"></textarea>
+         <textarea rows=15 placeholder="enter a memory here....." ng-model="newMessage.text"></textarea>
       <br>
-         <button type="button" name="button" ng-click="getComment()">Submit</button>
+         <button type="button" name="button" ng-click="addMessage(newMessage)">Submit</button>
       <br>
-   </div>
 
-      <div class="memRight" ng-repeat="memory in memories">
-            {{memory}}<br>
+
+<!-- formatting and output for guest book -->
+            <ul>
+               <li ng-repeat="message in messages">
+                  {{message.username}}:
+                  <br>
+                  {{message.text}}
+                  <br>
+                  {{today}}
+               </li>
+            </ul>
       </div>
 </div>
