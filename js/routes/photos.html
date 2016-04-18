@@ -1,7 +1,11 @@
-<div class='carousel'>
-   <button class="navButton" ng-click="prevPhoto()"><< Image</button>
-   Photo {{num}} of 27
-   <button class="navButton" ng-click="nextPhoto()">Image >></button>
-   <br>
-   <img  src={{photo}} height="550" width="450"/>
+<div id="carousel">
+   <div class='carouselButtons'>
+      <button class="Button" ng-click="prevPhoto()"><<</button>
+      <button class="Button" ng-click="nextPhoto()">>></button>
+   </div>
+   <div class="carouselPhoto">
+      <img  src={{photo}} height="550" width="450"/>
+      <br>
+      {{num}} of 27
+   </div>
 </div>

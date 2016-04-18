@@ -5,29 +5,26 @@ body{
    margin: 0 auto;
    background-image: url("/img/purpclouds.jpg");
 }
+#wrapper{
+   margin: 0 auto;
+}
 .navDir{
-   height: 100%;
    width: 100%;
    padding: 3%;
    background-image: url('/img/navFlowers.jpg');
-   text-align: center;
+   display: flex;
+   justify-content: center;
+   /*align-items: center;*/
    margin: 0 auto;
-   /*position: fixed;*/
 }
-.navButton{
+.Button{
    padding: 2%;
    display: inline-block;
    margin: auto;
    cursor: pointer;
    background: rgb(58, 60, 58);
    color: rgb(67, 200, 236);
-   border-radius: 49%;
-   text-align: center;
-   margin-right: 5%;
-   /*display: flex;
-   align-content: center;
-   justify-content: center;
-   flex-direction: row;*/
+   border-radius: 50px;
 }
 .home{
    text-align: center;
@@ -38,10 +35,21 @@ body{
    color: rgb(84, 84, 84);
    text-shadow: 2px 2px rgb(246, 239, 243);
 }
-.carousel{
+
+#carousel{
+   text-align: center;
    margin: auto;
+}
+.carouselButtons{
    text-align: center;
    padding: 1%;
+}
+.carouselPhoto{
+   margin: 0 auto;
+   text-align: center;
+   font-family: canal;
+   font-size: 12px;
+   color: white;
 }
 .memorial h2{
    margin: 0 auto;
@@ -98,13 +106,15 @@ body{
 
 .footer{
    padding: 2%;
-   background: rgb(0,0,0);
    width: 100%;
+   /*background: rgb(0,0,0);*/
+   width: 100%;
+   background-image: url('/img/navFlowers.jpg');
+   display: flex;
+   justify-content: center;
 }
 .footbutton{
    padding: 1%;
    border-radius: 70%;
-   display: flex;
-   justify-content:flex-start;
-   align-content: flex-start;
+   cursor: pointer;
 }
