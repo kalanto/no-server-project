@@ -38,7 +38,11 @@ body{
    color: rgb(84, 84, 84);
    text-shadow: 2px 2px rgb(246, 239, 243);
 }
-
+.carousel{
+   margin: auto;
+   text-align: center;
+   padding: 1%;
+}
 .memorial h2{
    margin: 0 auto;
    padding: 2%;
@@ -95,6 +99,12 @@ body{
 .footer{
    padding: 2%;
    background: rgb(0,0,0);
-   text-align: center;
    width: 100%;
+}
+.footbutton{
+   padding: 1%;
+   border-radius: 70%;
+   display: flex;
+   justify-content:flex-start;
+   align-content: flex-start;
 }
