@@ -1,27 +1,32 @@
 <div class="memorial">
    <!-- input boxes for guest book  -->
-      Sign the virtual guest book below
-      <br>
+   <div class="memInput">
+      <h2>Sign the Virtual Guest Book Below</h2>
+      <hr/>
          Name:
       <br>
-         <textarea placeholder="enter your name here...." ng-model="newMessage.username"></textarea>
+         <textarea class="input" placeholder="enter your name here...." ng-model="newMessage.username"></textarea>
       <br>
          Comment or Memory:
       <br>
-         <textarea rows=15 placeholder="enter a memory here....." ng-model="newMessage.text"></textarea>
+         <textarea class="input" rows=15 placeholder="enter a comment or memory here....." ng-model="newMessage.text"></textarea>
       <br>
          <button type="button" name="button" ng-click="addMessage(newMessage)">Submit</button>
       <br>
-
+      <hr/>
+   </div>
 
 <!-- formatting and output for guest book -->
             <ul>
                <li ng-repeat="message in messages">
-                  {{message.username}}:
+                  {{message.username}},
                   <br>
                   {{message.text}}
                   <br>
                   {{today}}
+                  <br>
+                  {{date | date:'MM-dd-yyyy'}}
+                  <hr/>
                </li>
             </ul>
       </div>

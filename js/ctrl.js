@@ -4,4 +4,5 @@ angular.module('noprizeApp').controller('noprizeCtrl', function($scope, noprizeS
    $scope.addMessage = function(message){
       $scope.messages.$add(message);
    };
+   $scope.date = new Date();
 });
