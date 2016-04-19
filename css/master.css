@@ -9,17 +9,14 @@ body{
    margin: 0 auto;
 }
 .navDir{
-   width: 100%;
+   /*width: 100%;*/
    padding: 3%;
    background-image: url('/img/navFlowers.jpg');
    display: flex;
-   justify-content: center;
-   /*align-items: center;*/
-   margin: 0 auto;
+   justify-content: space-around;
 }
 .Button{
    padding: 2%;
-   display: inline-block;
    margin: auto;
    cursor: pointer;
    background: rgb(58, 60, 58);
@@ -105,7 +102,7 @@ body{
 }
 
 .footer{
-   width: 100%;
+   /*width: 100%;*/
    padding: 3%;
    background-image: url('/img/navFlowers.jpg');
    display: flex;
