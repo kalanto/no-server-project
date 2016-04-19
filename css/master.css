@@ -12,8 +12,9 @@ body{
    /*width: 100%;*/
    padding: 3%;
    background-image: url('/img/navFlowers.jpg');
-   display: flex;
-   justify-content: space-around;
+   text-align: center;
+   /*display: flex;
+   justify-content: space-around;*/
 }
 .Button{
    padding: 2%;
@@ -36,6 +37,9 @@ body{
 #carousel{
    text-align: center;
    margin: auto;
+   font-family: canal;
+   font-size: 14px;
+   color: white;
 }
 .carouselButtons{
    text-align: center;
@@ -44,9 +48,6 @@ body{
 .carouselPhoto{
    margin: 0 auto;
    text-align: center;
-   font-family: canal;
-   font-size: 12px;
-   color: white;
 }
 .memorial h2{
    margin: 0 auto;

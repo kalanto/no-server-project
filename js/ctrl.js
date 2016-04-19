@@ -6,6 +6,7 @@ angular.module('noprizeApp').controller('noprizeCtrl', function($scope, firebase
       $scope.messages.$add(message);
    };
    $scope.date = new Date();
+
 // photo carousel scripts //
    $scope.num = 1;
    $scope.photo = "/img/" + $scope.num + ".jpg";
