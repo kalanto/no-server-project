@@ -48,6 +48,7 @@ body{
 .carouselPhoto{
    margin: 0 auto;
    text-align: center;
+   margin-bottom: 5%;
 }
 .memorial h2{
    margin: 0 auto;
@@ -104,17 +105,17 @@ body{
 
 .footer{
    /*width: 100%;*/
-   padding: 3%;
+   padding: 5%;
    background-image: url('/img/navFlowers.jpg');
    display: flex;
    justify-content: center;
    margin: 0 auto;
 }
 .footbutton{
-   padding: 15%;
-   border-radius: 70%;
+   padding: 5%;
+   border-radius: 50%;
    cursor: pointer;
    font-family: canal;
    font-size: 16px;
-   background: red;
+   background: rgb(82, 82, 82);
 }
