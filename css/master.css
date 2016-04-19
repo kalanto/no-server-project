@@ -105,13 +105,12 @@ body{
 }
 
 .footer{
-   padding: 2%;
    width: 100%;
-   /*background: rgb(0,0,0);*/
-   width: 100%;
+   padding: 3%;
    background-image: url('/img/navFlowers.jpg');
    display: flex;
-   justify-content: flex-start;
+   justify-content: center;
+   margin: 0 auto;
 }
 .footbutton{
    padding: 15%;
