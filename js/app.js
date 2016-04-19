@@ -17,4 +17,9 @@ angular.module('noprizeApp',['firebase','ui.router'])
       $urlRouterProvider
       .otherwise('/');
 
+})
+.filter('reverse', function() {
+  return function(items) {
+    return items.slice().reverse();
+  };
 });

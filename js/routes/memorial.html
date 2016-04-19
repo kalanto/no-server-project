@@ -19,7 +19,7 @@
 <!-- formatting and output for guest book -->
    <div class="memPost"
          <ul>
-            <div ng-repeat="message in messages.reverse()" >
+            <div ng-repeat="message in messages | reverse" >
                <div class="date">
                      {{date | date:'MM-dd-yyyy'}}
                </div>
