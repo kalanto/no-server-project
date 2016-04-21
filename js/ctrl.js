@@ -1,7 +1,7 @@
 angular.module('noprizeApp').controller('noprizeCtrl', function($scope, firebaseRoot, $firebaseArray){
 // firebase code for guest book page //
    var messagesRef = new Firebase(firebaseRoot + '/messages');
-   // $scope.newMessage = {};
+
    $scope.messages = $firebaseArray(messagesRef);
    $scope.newMessage = {};
    $scope.addMessage = function(message){

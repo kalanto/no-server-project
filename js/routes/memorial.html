@@ -5,11 +5,11 @@
       <hr/>
          <h3>Name:</h3>
       <br>
-         <textarea class="input" placeholder="enter your name here...." ng-model="newMessage.username"></textarea>
+         <textarea class="input" placeholder="enter your name here...." type=text size=20 autocorrect=off autocapitalize=words ng-model="newMessage.username"></textarea>
       <br>
          <h3>Comment or Memory:</h3>
       <br>
-         <textarea class="input" rows=15 placeholder="enter a comment or memory here....." ng-model="newMessage.text"></textarea>
+         <textarea class="input" rows=15 placeholder="enter a comment or memory here....." type=text size=20 autocorrect=off autocapitalize=words ng-model="newMessage.text"></textarea>
       <br>
          <button type="button" class="button" ng-click="addMessage(newMessage)">Submit</button>
       <br>
@@ -20,10 +20,8 @@
    <div class="memPost"
          <ul>
             <div ng-repeat="message in messages | reverse" >
-               <div class="date">
-                     {{date | date:'MM-dd-yyyy'}}
-               </div>
                   <br>
+                  {{message.time |date: 'MM/dd/yyyy hh:mm a'}}
                <div class="name">
                   {{message.username}},
                </div>

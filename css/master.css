@@ -22,6 +22,7 @@
    color: rgb(0, 0, 0);
    font-family: Candal;
    background-image: url("/img/purpclouds.jpg");
+   background-size: contain;
 }
 .home h1, h2{
    color: rgb(84, 84, 84);
@@ -37,6 +38,7 @@
    font-size: 14px;
    color: white;
    background: purple;
+   background-size: contain;
 }
 .carouselButtons{
    text-align: center;
